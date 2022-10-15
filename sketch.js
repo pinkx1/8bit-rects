@@ -25,48 +25,48 @@ function setup() {
 }
 
 function draw() {
-	var bc = random(bgColor); // выбор рандомного цвета фона
+	var bc = random(bgColor);
 	
-	background(bc); // установка рандомного цвета фона
+	background(bc);
 	
-	if (bc == 0) { //выбор цвета квадрата в зависимости от цвета фона
+	if (bc == 0) { 
 		fill(254);
 	} else {
 		fill(0);
 	}	
 	
-	rectangle1.size -= 10; // уменьшаю размер квадрата
-	rectangle1.posX += 5; // фиксирую положение по центру
-	rectangle1.posY += 5; // фиксирую положение по центру
+	rectangle1.size -= 10; 
+	rectangle1.posX += 5; 
+	rectangle1.posY += 5; 
 	
-	if (rectangle1.size <= 0) { // перемещаю квадрат после его уменьшения до 0
+	if (rectangle1.size <= 0) { 
 		rectangle1.posX = random(800);
 		rectangle1.posY = random(800);
 		rectangle1.size = random(0,150);
 	}
 	
-	rectangle2.size -= 10; // уменьшаю размер квадрата
-	rectangle2.posX += 5; // фиксирую положение по центру
-	rectangle2.posY += 5; // фиксирую положение по центру
+	rectangle2.size -= 10; 
+	rectangle2.posX += 5; 
+	rectangle2.posY += 5; 
 	
-	if (rectangle2.size <= 0) { // перемещаю квадрат после его уменьшения до 0
+	if (rectangle2.size <= 0) { 
 		rectangle2.posX = random(800);
 		rectangle2.posY = random(800);
 		rectangle2.size = random(0,150);
 	}
 	
-	rectangle3.size -= 10; // уменьшаю размер квадрата
-	rectangle3.posX += 5; // фиксирую положение по центру
-	rectangle3.posY += 5; // фиксирую положение по центру
+	rectangle3.size -= 10; 
+	rectangle3.posX += 5; 
+	rectangle3.posY += 5; 
 	
-	if (rectangle3.size <= 0) { // перемещаю квадрат после его уменьшения до 0
+	if (rectangle3.size <= 0) { 
 		rectangle3.posX = random(800);
 		rectangle3.posY = random(800);
 		rectangle3.size = random(0,150);
 	}
 	
-	rect(rectangle1.posX,rectangle1.posY,rectangle1.size); //рисую квадрат
-	rect(rectangle2.posX,rectangle2.posY,rectangle2.size); //рисую квадрат
-	rect(rectangle3.posX,rectangle3.posY,rectangle3.size); //рисую квадрат
+	rect(rectangle1.posX,rectangle1.posY,rectangle1.size); 
+	rect(rectangle2.posX,rectangle2.posY,rectangle2.size); 
+	rect(rectangle3.posX,rectangle3.posY,rectangle3.size); 
 
 }
